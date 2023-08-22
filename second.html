@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // let book ={
+        //     name : "Saniel ia Amazing",
+        //     year : 2022,
+        //     display: displayBook(name, year)
+        // };
+
+        function display(name, year){
+            document.write("This book's is "+ name + "<br>");
+            document.write("This book's is "+ year  + "<br>");
+            document.write("====================" + "<br>");
+        }
+        function addPrice(p){
+            this.price = p;
+        }
+
+        function book(name, year, price){
+            this.name = name;
+            this.year = year;
+            this.display = display(name, year);
+            this.price = addPrice(price);
+        }
+
+        var book1 = new book("Daniel ia amazin", 2022);
+        var book2 = new book("paragol ia amazin", 1988);
+        var book3 = new book("paragol ia amazin", 2010, 200);
+
+        book1.display();
+        book2.display();
+        book3.display();
+    </script>
+</body>
+</html>
